@@ -1,3 +1,7 @@
-const App = () => <h1>Remove this heading and write your code here</h1>
+import LoginForm from './components/LoginForm'
+
+import './App.css'
+
+const App = () => <LoginForm />
 
 export default App
