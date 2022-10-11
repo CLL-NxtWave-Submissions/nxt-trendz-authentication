@@ -85,6 +85,11 @@
   font-weight: 550;
 }
 
+.login-error-message {
+  color: #ff0b37;
+  font-size: 0.8rem;
+}
+
 @media (min-width: 992px) {
   .login-form-main-img {
     display: auto;
