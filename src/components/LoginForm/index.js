@@ -183,9 +183,7 @@ export default class LoginForm extends Component {
 
   render() {
     const {username, password, loginErrorMessage} = this.state
-    console.log(
-      `username: ${username}, password: ${password}, loginErrorMessage: ${loginErrorMessage}`,
-    )
+
     return (
       <div className="login-bg-container">
         <div className="login-content-container">
