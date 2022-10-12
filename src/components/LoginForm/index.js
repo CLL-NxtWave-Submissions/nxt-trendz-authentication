@@ -83,6 +83,7 @@ export default class LoginForm extends Component {
     inputId,
     inputType,
     inputLabel,
+    inputPlaceholder,
     inputValue,
     inputChangeHandler,
   ) => (
@@ -94,6 +95,7 @@ export default class LoginForm extends Component {
         id={inputId}
         type={inputType}
         className="login-form-input"
+        placeholder={inputPlaceholder}
         value={inputValue}
         onChange={inputChangeHandler}
       />
@@ -123,6 +125,7 @@ export default class LoginForm extends Component {
         'input-username',
         'text',
         'USERNAME',
+        'Username',
         inputUsername,
         this.onUsernameChange,
       )}
@@ -130,6 +133,7 @@ export default class LoginForm extends Component {
         'input-password',
         'password',
         'PASSWORD',
+        'Password',
         inputPassword,
         this.onPasswordChange,
       )}
