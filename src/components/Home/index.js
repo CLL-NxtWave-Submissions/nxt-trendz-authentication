@@ -1,7 +1,9 @@
+import Header from '../Header'
 import './index.css'
 
 const Home = () => (
   <div className="home-bg-container">
+    <Header />
     <div className="home-content-container">
       <h1 className="home-content-header">Clothes That Get You Noticed</h1>
       <img
