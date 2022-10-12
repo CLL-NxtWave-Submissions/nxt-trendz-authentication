@@ -5,7 +5,7 @@
 }
 
 .login-content-container {
-  padding: 1rem;
+  padding: 2.5rem;
 }
 
 .login-bg-container,
@@ -33,17 +33,17 @@
 }
 
 .login-brand-img {
-  width: 100%;
+  width: 50%;
 }
 
 .login-form-img {
-  display: auto;
-  width: 100%;
+  display: block;
+  width: 90%;
 }
 
 .login-brand-img,
 .login-form-img {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .login-form-input-container {
@@ -67,7 +67,7 @@
   padding: 0.75rem 1rem;
   background-color: #d7dfe9;
   color: #64748b;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   outline: none;
   border: none;
 }
@@ -83,28 +83,36 @@
   color: #ffffff;
   font-size: 1rem;
   font-weight: 550;
+  margin-top: 0.5rem;
 }
 
 .login-error-message {
   color: #ff0b37;
   font-size: 0.8rem;
+  align-self: flex-start;
 }
 
 @media (min-width: 992px) {
-  .login-form-main-img {
-    display: auto;
-    width: 60%;
-    margin-right: 2rem;
-  }
-
   .login-form-content-container {
-    padding: 2rem;
+    padding: 3.5rem;
     margin: auto;
     border-radius: 0.4rem;
     box-shadow: 0 0 0.5rem 0 #e2e8f0;
+    width: 30%;
+  }
+
+  .login-brand-img {
+    width: 70%;
+    margin-bottom: 2rem;
   }
 
   .login-form-img {
     display: none;
+  }
+
+  .login-main-img {
+    display: block;
+    width: 60%;
+    margin: auto;
   }
 }
