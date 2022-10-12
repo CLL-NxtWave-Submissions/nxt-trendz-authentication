@@ -65,6 +65,7 @@
   }
 
   .home-content-container {
+    justify-content: flex-start;
     text-align: left;
   }
 

@@ -35,19 +35,15 @@ export default class LoginForm extends Component {
     return loginPostRequestResponse
   }
 
-  loginFailedResponseHandler = async loginFailedResponse => {
-    const responseData = await loginFailedResponse.json()
-    const {errorMsg} = responseData.error_msg
+  loginFailedResponseHandler = loginFailedResponseData => {
+    const errorMsg = loginFailedResponseData.error_msg
 
     this.setState({
       loginErrorMessage: errorMsg,
     })
   }
 
-  loginSuccessResponseHandler = (
-    loginSuccessResponse,
-    currentLoginErrorMessage,
-  ) => {
+  loginSuccessResponseHandler = currentLoginErrorMessage => {
     if (currentLoginErrorMessage !== '') {
       this.setState({
         loginErrorMessage: '',
@@ -72,14 +68,14 @@ export default class LoginForm extends Component {
       loginCredentials,
     )
 
-    if (!loginPostRequestResponse.ok) {
-      await this.loginFailedResponseHandler(loginPostRequestResponse)
-    } else {
+    const loginResponseData = await loginPostRequestResponse.json()
+    const loginResponseStatusCode = loginResponseData.status_code
+
+    if (loginResponseStatusCode === undefined) {
       // login success
-      this.loginSuccessResponseHandler(
-        loginPostRequestResponse,
-        loginErrorMessage,
-      )
+      this.loginSuccessResponseHandler(loginErrorMessage)
+    } else {
+      this.loginFailedResponseHandler(loginResponseData)
     }
   }
 
@@ -147,8 +143,10 @@ export default class LoginForm extends Component {
   )
 
   render() {
-    // const {username, password, loginErrorMessage} = this.state
-
+    const {username, password, loginErrorMessage} = this.state
+    console.log(
+      `username: ${username}, password: ${password}, loginErrorMessage: ${loginErrorMessage}`,
+    )
     return (
       <div className="login-bg-container">
         <div className="login-content-container">
@@ -157,8 +155,8 @@ export default class LoginForm extends Component {
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
             alt="website login"
           />
-          {/* {this.renderLoginFormElement(username, password, loginErrorMessage)} */}
-          {this.renderLoginFormElement(...this.state)}
+          {this.renderLoginFormElement(username, password, loginErrorMessage)}
+          {/* {this.renderLoginFormElement(...this.state)} */}
         </div>
       </div>
     )

@@ -68,7 +68,7 @@
   border-radius: 0.2rem;
 }
 
-@media (min-with: 992px) {
+@media (min-with: 768px) {
   .header-bg-container {
     margin-bottom: 3rem;
   }
