@@ -25,15 +25,12 @@ const Header = () => (
           <button type="button" className="nav-button">
             Cart
           </button>
+        </li>
 
-          <li>
-            <button
-              type="button"
-              className="nav-button logout-button-with-text"
-            >
-              Logout
-            </button>
-          </li>
+        <li>
+          <button type="button" className="nav-button logout-button-with-text">
+            Logout
+          </button>
         </li>
       </ul>
       <button type="button" className="nav-button logout-button-with-icon">
