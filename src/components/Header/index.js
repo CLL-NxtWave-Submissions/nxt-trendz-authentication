@@ -10,21 +10,30 @@ const Header = () => (
       />
       <ul className="header-row-nav-button-list">
         <li>
-          <button type="button" className="nav-button logout-button-with-text">
+          <button type="button" className="nav-button">
             Home
           </button>
         </li>
 
         <li>
-          <button type="button" className="nav-button logout-button-with-text">
+          <button type="button" className="nav-button">
             Products
           </button>
         </li>
 
         <li>
-          <button type="button" className="nav-button logout-button-with-text">
+          <button type="button" className="nav-button">
             Cart
           </button>
+
+          <li>
+            <button
+              type="button"
+              className="nav-button logout-button-with-text"
+            >
+              Logout
+            </button>
+          </li>
         </li>
       </ul>
       <button type="button" className="nav-button logout-button-with-icon">
