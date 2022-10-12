@@ -9,7 +9,7 @@ import './App.css'
 const App = () => (
   <Switch>
     <Route path="/login" component={LoginForm} />
-    <Route path="/" component={Home} />
+    <Route exact path="/" component={Home} />
     <Route component={NotFound} />
   </Switch>
 )
