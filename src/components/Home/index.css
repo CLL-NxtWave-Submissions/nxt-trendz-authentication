@@ -9,6 +9,13 @@
   padding: 1rem;
 }
 
+.home-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .home-content-container {
   display: flex;
   flex-direction: column;
@@ -53,8 +60,11 @@
 }
 
 @media (min-width: 768px) {
-  .home-bg-container {
+  .home-container {
     flex-direction: row;
+  }
+
+  .home-content-container {
     text-align: left;
   }
 
@@ -72,7 +82,7 @@
   }
 
   .home-row-image {
-    display: auto;
+    display: block;
     width: 40%;
     margin-right: 0;
     padding-right: 0;
