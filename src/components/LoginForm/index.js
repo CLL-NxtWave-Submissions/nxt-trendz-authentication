@@ -152,7 +152,7 @@ export default class LoginForm extends Component {
           Login
         </button>
         {currentLoginErrorMessage.length > 0 && (
-          <p className="login-error-message">{currentLoginErrorMessage}</p>
+          <p className="login-error-message">{`*${currentLoginErrorMessage}`}</p>
         )}
       </div>
 
