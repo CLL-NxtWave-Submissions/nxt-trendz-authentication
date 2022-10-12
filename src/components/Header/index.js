@@ -34,38 +34,38 @@ const Header = () => (
           alt="nav logout"
         />
       </button>
-      <ul className="header-column-nav-button-list">
-        <li>
-          <button type="button" className="nav-button">
-            <img
-              className="nav-icon"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
-              alt="nav home"
-            />
-          </button>
-        </li>
-
-        <li>
-          <button type="button" className="nav-button">
-            <img
-              className="nav-icon"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
-              alt="nav products"
-            />
-          </button>
-        </li>
-
-        <li>
-          <button type="button" className="nav-button">
-            <img
-              className="nav-icon"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-              alt="nav cart"
-            />
-          </button>
-        </li>
-      </ul>
     </div>
+    <ul className="header-column-nav-button-list">
+      <li>
+        <button type="button" className="nav-button">
+          <img
+            className="nav-icon"
+            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
+            alt="nav home"
+          />
+        </button>
+      </li>
+
+      <li>
+        <button type="button" className="nav-button">
+          <img
+            className="nav-icon"
+            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
+            alt="nav products"
+          />
+        </button>
+      </li>
+
+      <li>
+        <button type="button" className="nav-button">
+          <img
+            className="nav-icon"
+            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+            alt="nav cart"
+          />
+        </button>
+      </li>
+    </ul>
   </div>
 )
 
