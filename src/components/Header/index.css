@@ -16,8 +16,8 @@
 }
 
 .header-brand-logo {
-  width: 14rem;
-  height: 3rem;
+  width: 7rem;
+  height: 1.5rem;
   padding-left: 0.5rem;
 }
 
@@ -40,8 +40,8 @@
   color: #ffffff;
   background-color: #0967d2;
   font-size: 0.8rem;
-  padding: 1rem 1.5rem;
-  border-radius: 0.4rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.2rem;
 }
 
 .nav-icon {
@@ -76,11 +76,25 @@
     margin-bottom: 3rem;
   }
 
+  .header-brand-logo {
+    width: 11rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+  }
+
   .header-row-nav-button-list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+  }
+
+  .logout-button-with-text {
+    font-size: 0.8rem;
   }
 
   .logout-button-with-icon {

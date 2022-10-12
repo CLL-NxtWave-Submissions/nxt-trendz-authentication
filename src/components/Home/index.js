@@ -6,7 +6,7 @@ const Home = () => (
     <Header />
     <div className="home-container">
       <div className="home-content-container">
-        <h1 className="home-content-header">Clothes That Get You Noticed</h1>
+        <h1 className="home-content-header">Clothes That Get YOU Noticed</h1>
         <img
           className="home-content-column-image"
           src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-img.png"
