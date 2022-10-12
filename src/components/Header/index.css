@@ -16,7 +16,7 @@
 }
 
 .header-brand-logo {
-  width: 3rem;
+  width: 14rem;
   height: 3rem;
   padding-left: 0.5rem;
 }
@@ -53,6 +53,8 @@
 }
 
 .logout-button-icon {
+  height: 1.5rem;
+  width: 2rem;
   padding-right: 0.5rem;
 }
 
@@ -68,7 +70,7 @@
   border-radius: 0.2rem;
 }
 
-@media (min-with: 768px) {
+@media (min-width: 768px) {
   .header-bg-container {
     margin-bottom: 3rem;
   }
