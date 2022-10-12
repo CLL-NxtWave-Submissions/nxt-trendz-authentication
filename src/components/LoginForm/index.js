@@ -111,8 +111,13 @@ export default class LoginForm extends Component {
       className="login-form-content-container"
       onSubmit={this.onLoginFormSubmit}
     >
-      <img
+      {/* <img
         className="login-brand-img"
+        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+        alt="website logo"
+      /> */}
+      <img
+        className="login-main-brand-img"
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
         alt="website logo"
       />
@@ -121,7 +126,37 @@ export default class LoginForm extends Component {
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
         alt="website login"
       />
-      {this.renderLoginFormInputContainer(
+      <div className="login-form-input-content-container">
+        <img
+          className="login-form-brand-img"
+          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+          alt="website logo"
+        />
+        {this.renderLoginFormInputContainer(
+          'input-username',
+          'text',
+          'USERNAME',
+          'Username',
+          inputUsername,
+          this.onUsernameChange,
+        )}
+        {this.renderLoginFormInputContainer(
+          'input-password',
+          'password',
+          'PASSWORD',
+          'Password',
+          inputPassword,
+          this.onPasswordChange,
+        )}
+        <button type="submit" className="login-button">
+          Login
+        </button>
+        {currentLoginErrorMessage.length > 0 && (
+          <p className="login-error-message">{currentLoginErrorMessage}</p>
+        )}
+      </div>
+
+      {/* {this.renderLoginFormInputContainer(
         'input-username',
         'text',
         'USERNAME',
@@ -142,7 +177,7 @@ export default class LoginForm extends Component {
       </button>
       {currentLoginErrorMessage.length > 0 && (
         <p className="login-error-message">{currentLoginErrorMessage}</p>
-      )}
+      )} */}
     </form>
   )
 
@@ -154,11 +189,11 @@ export default class LoginForm extends Component {
     return (
       <div className="login-bg-container">
         <div className="login-content-container">
-          <img
+          {/* <img
             className="login-main-img"
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
             alt="website login"
-          />
+          /> */}
           {this.renderLoginFormElement(username, password, loginErrorMessage)}
           {/* {this.renderLoginFormElement(...this.state)} */}
         </div>
