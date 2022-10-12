@@ -1,1 +1,78 @@
-/* Write your CSS code here */
+.home-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 1rem;
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.home-content-header {
+  color: #1e293b;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.home-content-column-image {
+  width: 60%;
+  margin: 1.5rem 0;
+}
+
+.home-content-description {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.home-content-shop-now-button {
+  color: #ffffff;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem 4rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.home-row-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .home-content-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .home-content-header {
+    font-size: 2.5rem;
+  }
+
+  .home-content-column-image {
+    display: none;
+  }
+
+  .home-content-description,
+  .home-content-shop-now-button {
+    font-size: 1.5rem;
+  }
+
+  .home-row-image {
+    width: 40%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
