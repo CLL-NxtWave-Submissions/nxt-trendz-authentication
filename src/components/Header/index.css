@@ -1,1 +1,88 @@
-/* Write your CSS code here */
+.header-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.header-brand-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.header-brand-logo {
+  width: 3rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.header-row-nav-button-list {
+  display: none;
+}
+
+.nav-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.logout-button-with-text {
+  color: #ffffff;
+  background-color: #0967d2;
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem;
+}
+
+.nav-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.logout-button-with-icon {
+  padding-right: 0.5rem;
+}
+
+.logout-button-icon {
+  padding-right: 0.5rem;
+}
+
+.header-column-nav-button-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #e6f6ff;
+  border-radius: 0.2rem;
+}
+
+@media (min-with: 992px) {
+  .header-bg-container {
+    margin-bottom: 3rem;
+  }
+
+  .header-row-nav-button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logout-button-with-icon {
+    display: none;
+  }
+
+  .header-column-nav-button-list {
+    display: none;
+  }
+}
